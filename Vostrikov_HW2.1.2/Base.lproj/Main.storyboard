@@ -26,8 +26,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startNextButtonPresed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bza-sS-b8F"/>
+                                </connections>
                             </button>
-                            <view autoresizesSubviews="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="sek-DH-TmG">
+                            <view autoresizesSubviews="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="sek-DH-TmG">
                                 <rect key="frame" x="130.5" y="40" width="114" height="114"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -35,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="114" id="K5l-NY-bPB"/>
                                 </constraints>
                             </view>
-                            <view autoresizesSubviews="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKx-rq-d3V">
+                            <view autoresizesSubviews="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKx-rq-d3V">
                                 <rect key="frame" x="130.5" y="170" width="114" height="114"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -43,7 +46,7 @@
                                     <constraint firstAttribute="width" constant="114" id="b38-eP-H4k"/>
                                 </constraints>
                             </view>
-                            <view autoresizesSubviews="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwH-7R-BRO">
+                            <view autoresizesSubviews="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwH-7R-BRO">
                                 <rect key="frame" x="130.5" y="300" width="114" height="114"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -74,10 +77,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="greenView" destination="UwH-7R-BRO" id="OGJ-gE-H3k"/>
+                        <outlet property="redView" destination="sek-DH-TmG" id="GG3-DR-EmA"/>
+                        <outlet property="startNextButton" destination="XCu-OV-ZZk" id="ngV-gV-rDl"/>
+                        <outlet property="yellowView" destination="JKx-rq-d3V" id="HeG-ef-bcs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.94202898550725" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-175" y="144"/>
         </scene>
     </scenes>
 </document>
